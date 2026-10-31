@@ -1,37 +1,12 @@
-// =====================================
-// LESSON: CONSOLE.WRITE VS CONSOLE.WRITELINE
-// =====================================
+// Console Printing with WriteLine
+// The explanation and practice exercise are in 02_Console_Printing.md.
 
-// 1. Console.WriteLine()
-
-Console.WriteLine("Hello");
-Console.WriteLine("World");
-
-// 2. Console.Write()
-
-Console.Write("Hello");
-Console.Write("World");
-
-// 3. Combining both methods
-
-Console.Write("Name: ");
-Console.WriteLine("Alice");
-
-// 4. Combining text and numbers
-
-Console.Write("Score: ");
-Console.Write(100);
-Console.WriteLine(" points");
-
-
-
-public class Solution
+public static class Lesson02ConsolePrinting
 {
-    public static void PrintGreeting()
+    public static void Run()
     {
-        // Use Console.Write to print without adding a newline
-        Console.Write("Hello, ");
-        // Then use Console.WriteLine to complete the message
-        Console.WriteLine("World!");
+        Console.WriteLine("Welcome!");
+        Console.WriteLine("I am learning C#.");
+        Console.WriteLine(2026);
     }
 }
