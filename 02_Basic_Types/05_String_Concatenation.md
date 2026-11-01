@@ -1,49 +1,65 @@
-# String Concatenation
+# Escape Sequences
 
 ## 1. What is it?
 
-String concatenation means joining two or more strings together.
+Escape sequences are special character combinations used inside strings.
 
-In C#, the `+` operator can be used to combine strings.
+They begin with a backslash (`\`).
+
+They allow you to add special characters to text.
 
 ## 2. Basic syntax
 
 ```csharp
-string firstName = "Alice";
-string lastName = "Crossman";
+string message = "Hello\nWorld";
 
-string fullName = firstName + " " + lastName;
-
-Console.WriteLine(fullName);
+Console.WriteLine(message);
 ```
 
-## 3. Line-by-line explanation
+Output:
 
-- `firstName` stores the first name.
-- `lastName` stores the last name.
-- `+` joins the strings together.
-- `" "` adds a space between the names.
-- `fullName` stores the combined result.
-- `Console.WriteLine()` displays the result.
+```text
+Hello
+World
+```
 
-## 4. Important notes
+## 3. Common escape sequences
 
-- The `+` operator can join strings.
-- You can combine multiple strings.
-- Spaces must be added when needed.
-- The original strings are not changed.
+| Escape sequence | Meaning               |
+| --------------- | --------------------- |
+| `\n`            | New line              |
+| `\t`            | Tab                   |
+| `\\`            | Backslash             |
+| `\"`            | Double quotation mark |
+| `\r`            | Carriage return       |
 
-## 5. Practice exercise
+## 4. Line-by-line explanation
 
-Create two string variables:
+- `string` declares a text variable.
+- `message` is the variable name.
+- `\n` creates a new line.
+- `Console.WriteLine()` displays the text.
 
-1. Your first name.
-2. Your last name.
+## 5. Important notes
 
-Join them into one full name and display it.
+- Escape sequences begin with a backslash.
+- `\n` moves text to a new line.
+- `\t` adds a tab space.
+- `\"` allows quotation marks inside a string.
 
-## 6. Check your understanding
+## 6. Practice exercise
 
-- What does concatenation mean?
-- Which operator can join strings?
-- Why do we add `" "` between two names?
+Create a string that displays:
+
+```text
+Name: Alice
+City: Diest
+```
+
+Use the `\n` escape sequence.
+
+## 7. Check your understanding
+
+- What is an escape sequence?
+- Which escape sequence creates a new line?
+- Which escape sequence adds a tab?
